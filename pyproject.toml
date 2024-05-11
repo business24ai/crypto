@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "crypto"
+version = "0.1.0"
+description = "crypto using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.28.8"}
+load-dotenv = "^0.1.0"
+pandas = "^2.2.2"
+python-binance = "^1.0.19"
+
+[tool.poetry.scripts]
+crypto = "crypto.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
